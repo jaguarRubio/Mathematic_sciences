@@ -1,0 +1,115 @@
+/* *{
+    box-sizing: content-box;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(236, 212, 74);
+}
+:root{
+    scroll-behavior: smooth;
+} */
+
+nav a{
+    text-decoration: none;
+    color: darkblue;
+}
+nav a:hover{
+    text-decoration: none;
+    color: cyan;
+}
+
+header{
+    background-color: rgba(255, 230, 86, 0.7);
+    padding: 2rem 1rem;
+    position: sticky;
+    top: 0;
+}
+
+
+main section:not(#centro, #seccion_diccionario, .foto){
+    padding:1rem;
+}
+h1{
+    font-size: 4rem;
+    text-align:center;
+    font-family:'Courier New', Courier, monospace
+}
+.foto{
+    padding:0;
+    background-color: #212;
+    width:100%;
+}
+.foto img{
+    width:100%;
+}
+#base{
+    border: dashed 3px black;
+}
+#rama button{
+    display:block;
+    margin: 0.5rem 0rem;
+    padding: 0.8rem;
+    background-color: limegreen;
+}
+#rama button:hover{
+    background-color: purple;
+}
+/* #seccion_diccionario{
+    padding:0;
+} */
+#fondo_dic{
+    background-color: #212;
+    padding: 5rem 0rem;
+    text-align:center;
+    background-image: url(../imagenes/0121a2a69c4ae484cb98c664e45cf999.jpeg);
+    background-size:contain;
+}
+#fondo_dic input{
+    padding: 0.8rem;
+    margin: 2.6rem;
+    width:50%;
+    max-width: 38rem;
+}
+/* #fondo_dic label{
+    color: #fff;
+    font-weight: bold;
+} */
+
+#seccion_tablas table tr td:not(math *, span, a), table{
+    border: 3px #129c12 solid;
+    background-color: rgb(218, 195, 66);
+}
+
+#seccion_tablas li table{display:inline-block;}
+
+table *{
+    padding: 0.6rem;
+}
+
+#seccion_tablas ul li table tr.flecha:nth-child(2n+1){
+    background-color: rgb(241, 212, 47);  /*Error*/
+}
+
+/*retirar relleno de los elementos de fractio*/
+#fractio, math, mfrac,
+span,
+a{padding:0;} mfrac{padding-left: 0.7rem;}
+/*configurar subindice y superindice*/
+.pote{
+    position:relative;
+    top:-0.5em;
+    font-size: 75%;}
+.logrit{
+    position:relative;
+    bottom:-0.5em;
+    font-size: 75%;}
+.simbolo{
+    text-align:center;
+}
+
+footer{
+    background-color:rgb(255, 230, 86);
+    padding: 2rem 1rem;
+}

@@ -1,0 +1,12 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(236, 212, 74);
+}
+:root{
+    scroll-behavior: smooth;
+}
