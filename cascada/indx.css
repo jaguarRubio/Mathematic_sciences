@@ -77,26 +77,35 @@ h1{
     font-weight: bold;
 } */
 
-#seccion_tablas table tr td:not(math *, span, a), table{
+/* #section_tables ul{
+
+} */
+
+#section_tables table tr td:not(math, mfrac, mn, span, a), table{
     border: 3px #129c12 solid;
-    background-color: rgb(218, 195, 66);
+    background-color: #edcb668c;
 }
 
-#seccion_tablas li table{display:inline-block;}
+/* #section_tables li table{
+    display:block;
+} */
+#section_tables li table{
+    margin: 0 auto 0 10%;
+}
 
 table *{
     padding: 0.6rem;
 }
 
-#seccion_tablas ul li table tr.flecha:nth-child(2n+1){
-    background-color: rgb(241, 212, 47);  /*Error*/
+#section_tables ul li table tr.row:nth-child(2n+1):not(tr.row:first-child){
+    background-color: #edbb46;  /*Error*/
 }
 
-/*retirar relleno de los elementos de fractio*/
+/*removing padding of fractio elements*/
 #fractio, math, mfrac,
 span,
 a{padding:0;} mfrac{padding-left: 0.7rem;}
-/*configurar subindice y superindice*/
+/*config subscript and superscript*/
 .pote{
     position:relative;
     top:-0.5em;
@@ -105,9 +114,16 @@ a{padding:0;} mfrac{padding-left: 0.7rem;}
     position:relative;
     bottom:-0.5em;
     font-size: 75%;}
-.simbolo{
+    
+.symbol{
     text-align:center;
 }
+td.description_th{
+    width: auto;
+}
+/* td, th{
+    width:10%;
+} */
 
 footer{
     background-color:rgb(255, 230, 86);
