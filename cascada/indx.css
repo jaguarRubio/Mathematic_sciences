@@ -27,18 +27,48 @@ header{
     top: 0;
 }
 
+#bar_nav h2{
+    font-size:2.1vw;
+}
+
+#link_relatives{
+    text-align: center;
+}
+
+#link_relatives a{
+    border: 1px red dashed;
+    padding: 3% 5%;
+    border-radius: 50%;
+}
+
+#link_relatives a:hover{
+    background-color: gold;
+}
+
 
 main section:not(#centro, #seccion_diccionario, .foto){
     padding:1rem;
 }
 h1{
-    font-size: 4rem;
+    font-size: 4vw;
     text-align:center;
     font-family:'Courier New', Courier, monospace
 }
+
+.P_science_introduction::first-letter{
+    font-size:3.3vw;
+    float: left;
+    padding: 0 0.3rem;
+    margin: 0.1em 0.2em 0;
+    display:block;
+    background-size: contain;
+    background-color: #129c12;
+    border: 2px burlywood solid;
+}
+
 .foto{
     padding:0;
-    background-color: #212;
+    /* background-color: #212; */
     width:100%;
 }
 .foto img{
@@ -82,7 +112,7 @@ h1{
 } */
 
 #section_tables table tr td:not(math, mfrac, mn, span, a), table{
-    border: 3px #129c12 solid;
+    border: 1pt #129c12 solid;
     background-color: #edcb668c;
 }
 
@@ -90,7 +120,7 @@ h1{
     display:block;
 } */
 #section_tables li table{
-    margin: 0 auto 0 10%;
+    margin: 0 auto 0 4rem;
 }
 
 table *{
