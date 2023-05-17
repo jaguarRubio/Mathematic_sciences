@@ -83,8 +83,8 @@
                           <li><a href="#">notions</a></li>
                           <li><a href="#">abstractions</a></li>
                           <li><a href="#">sets</a></li>
-                          <li><a href="#">numbers</a></li>
-                          <li><a href="#">numeral base system</a></li>
+                          <li><a href="#">elements</a></li>
+                          <li><a href="#">elements fundamental succession</a></li>
                       </ol>
                         </article>
                       </section>
@@ -131,7 +131,7 @@
                       <img src="./imagenes/Algebra_de_Baldor_Oscuro.jpg" alt="alkhuarismi dark">
                       <ol>
                           <li><a href="#">space</a></li>
-                          <li><a href="#">volume</a></li>
+                          <li><a href="#">volume and corps</a></li>
                           <li><a href="#">dimensions</a></li>
                       </ol>
                         </article>                      
@@ -160,11 +160,12 @@
             <section id="section_tables">
                 <h3>Tables</h3>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.
-                        <!-- <figure> -->
-                            <table id="table">
+                    <li onclick="mostrarT('table')"><span class="lista_tabla">table</span></li>
+                    <li onclick="mostrarT('table')"><span class="lista_tabla">table</span></li>
+                    <li onclick="mostrarT('table-7op-arithmetic')"><span class="lista_tabla">Arithmetic operations</span>
+                        <section id="table-7op-arithmetic">
+                        <figure>
+                            <table>
                                 <tr class="row">
                                     <th>symbol</th>
                                     <th>nomenclature</th>
@@ -177,7 +178,7 @@
                                     <td rowspan="3">multiplication</td>
                                     <td>e.z</td>
                                     <td class="description_th" rowspan="3">(the product is) so many times the multiplicand is with respect to what the multiplier is with respect to unit</td>
-                                    <td rowspan="3"><a href="#">page 134</a></a></td>
+                                    <td rowspan="3"><a href="#">page 134</a></td>
                                 </tr>
                                 <tr class="row">
                                     <td class="symbol">×</td>
@@ -206,7 +207,7 @@
                                     <td rowspan="4">division</td>
                                     <td>a÷d</td>
                                     <td class="description_th" rowspan="4">inverse operation to multiplication</td>
-                                    <td rowspan="4"><a href="#">page 177</a></td>
+                                    <td rowspan="4" class=d><a href="#">page 177</a></td>
                                 </tr>
                                 <tr class="row">
                                     <td class="symbol">⁄</td>
@@ -248,15 +249,34 @@
                                     <td><a href="#">page 233</a></td>
                                 </tr>
                             </table>
-                            <!-- <figcaption>
+                            <figcaption>
                                 <p>even though, is well known that in math we use letters to represent unknows values using the lasts (x, y, z) or to represent whatever number using the first from abecedary to give examples (a, b, c, etc.). I use random letters arbitrarily because I consider it more didactic, so potentiation and logarithmation doesn't has a proper symbol than ^ or log when there is a letter</p>
                             </figcaption>
-                        </figure> -->
+                        </figure>
+                        </section>
                         </li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
+                        <li onclick="mostrarT('table-3x3')"><span class="lista_tabla">table</span>
+                        <table id="table-3x3" class="oculto">
+                            <tr>
+                                <th>head</th>
+                                <th>head</th>
+                                <th>head</th>
+                            </tr>
+                            <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                            </tr>
+                            <tr>
+                                <td>data</td>
+                                <td>data</td>
+                                <td>data</td>
+                            </tr>
+                        </table>
+                    </li>
+                    <li onclick="mostrarT('table')"><span class="lista_tabla">table</span></li>
+                    <li onclick="mostrarT('table')"><span class="lista_tabla">table</span></li>
+                    <li onclick="mostrarT('table')"><span class="lista_tabla">table</span></li>
                 </ul>
             </section>            
 

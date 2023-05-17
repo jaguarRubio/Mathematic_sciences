@@ -185,13 +185,18 @@ article section{
 
 } */
 
+.lista_tabla{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 #section_tables table tr td:not(math, mfrac, mn, span, a), table{
     border: 1pt #129c12 solid;
     background-color: #edcb668c;
 }
 
-/* #section_tables li table{
-    display:block;
+/* #section_tables table{
+    display:inline-block;
 } */
 #section_tables li table{
     margin: 0 auto 0 4rem;
@@ -222,9 +227,9 @@ a{padding:0;} mfrac{padding-left: 0.7rem;}
 .symbol{
     text-align:center;
 }
-td.description_th{
+/* td.description_th{
     width: auto;
-}
+} */
 /* td, th{
     width:10%;
 } */
