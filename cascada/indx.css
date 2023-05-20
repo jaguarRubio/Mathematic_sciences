@@ -21,15 +21,63 @@ nav a:hover{
 }
 
 header{
-    background-color: rgba(255, 230, 86, 0.7);
-    padding: 2rem 1rem;
+    background-color: #ffe656b3;
+    padding: 1.5rem 1rem;
     position: sticky;
     top: 0;
     z-index: 2;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
 }
 
+#bar_nav{
+    display: flex;
+    /* background-color: #000; */
+    flex-wrap: wrap;
+    width:35%;
+}
+#bar_nav img{
+    /* background-color: #373; */
+    width:2.2rem;
+}
 #bar_nav h2{
     font-size:2.1vw;
+    /* background-color: #1af; */
+}
+#bar_nav nav{
+    /* background-color: #f3f; */
+    flex-grow: 1;
+}
+#bar_nav nav a:first-child{
+    padding-left:0.3rem;
+}
+
+header #user p{
+    display:inline;
+    color: #050505;
+}
+header #user p:hover{
+    color: #171717;
+}
+header #log_in{
+    border-right:#050505 solid 2px;
+    padding-right:0.2rem;
+}
+#user i{
+    background-color: darkred;
+    border-radius: 50%;
+    padding: 0.4rem;
+    color: #050505
+}
+#user a{
+    text-decoration: none;
+    color: none;
+}
+#user #log_in_sign_in{
+    display:inline;
+    background-color: #555;
+    padding: 0.4rem 0.2rem;
 }
 
 #link_relatives{
