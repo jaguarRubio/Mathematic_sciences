@@ -278,14 +278,14 @@ footer section nav ul{
 }
 
 @media screen and (min-width: 1143px){
-    #footer_content{
-        justify-content: space-around;
-    }
+#footer_content{
+    justify-content: space-around;
+}
 
     #footer_notes{
-        border-top: none;
-        padding-top: 0;
-        border-left: solid #ecd44a 2px;
-        padding-left: 2rem;
-    }
+    border-top: none;
+    padding-top: 0;
+    border-left: solid #ecd44a 2px;
+    padding-left: 2rem;
+}
 }
