@@ -81,17 +81,44 @@ header #log_in{
 }
 
 #link_relatives{
-    text-align: center;
+    margin-top:2rem;
+}
+#link_relatives nav{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #link_relatives a{
-    border: 1px red dashed;
-    padding: 3% 5%;
+    border: 1px black solid;
+    padding: 50px 65px;
+    margin: 0 0.2rem;
     border-radius: 50%;
+    color: white;
+    font-weight: 500;
 }
 
 #link_relatives a:hover{
-    background-color: gold;
+    color: white;
+    font-weight: 900;
+    text-decoration:underline;
+}
+
+#link_relatives a[href="./index.html"]{
+    background-image: url(../imagenes/Desert.jpg);
+    background-size: cover;
+}
+#link_relatives a[href="./cuenta.html"]{
+    background-image: url(../imagenes/Mountains.jpg);
+    background-size: cover;
+}
+#link_relatives a[href="./contact.html"]{
+    background-image: url(../imagenes/Forest.jpg);
+    background-size: cover;
+}
+#link_relatives a[href="./aboutUs.html"]{
+    background-image: url(../imagenes/Night.jpg);
+    background-size: cover;
 }
 
 
