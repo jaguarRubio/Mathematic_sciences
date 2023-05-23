@@ -12,3 +12,7 @@ body{
     scroll-behavior: smooth;
     transition: all 3s 2s 3s;
 }
+
+p{
+    font-family: 'DotGothic16', sans-serif;
+}

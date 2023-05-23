@@ -64,6 +64,64 @@ header #log_in{
     border-right:#050505 solid 2px;
     padding-right:0.2rem;
 }
+
+
+
+#three_section{
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:0.5rem;
+    justify-content: center;
+}
+
+
+#small-container{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width:70%;
+    column-gap:0.5rem;
+}
+#link_relatives{
+    padding:0 0.2rem;
+    background-color: #dbc339;
+    width: 80px;
+    max-width:120px;
+    flex-grow:1;
+}
+
+
+#center{
+    background-color: #cab228;
+    width:1052px;
+    max-width:1000px;
+    flex-grow:2;
+}
+
+
+#section_homage{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    /* align-self: flex-end; */
+    background-color: #dbc339;
+    width:10%;
+    max-width:100px;
+}
+#section_homage img{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+/* #section_homage img:first-child{
+    margin-top:250%;
+} */
+
+
+
+
 #user i{
     background-color: darkred;
     border-radius: 50%;
@@ -80,9 +138,8 @@ header #log_in{
     padding: 0.4rem 0.2rem;
 }
 
-#link_relatives{
-    margin-top:2rem;
-}
+/* LINK RELATIVES */
+
 #link_relatives nav{
     display:flex;
     justify-content: center;
@@ -91,7 +148,7 @@ header #log_in{
 
 #link_relatives a{
     border: 1px black solid;
-    padding: 50px 65px;
+    padding: 10%;
     margin: 0 0.2rem;
     border-radius: 50%;
     color: white;
@@ -122,9 +179,12 @@ header #log_in{
 }
 
 
-main section:not(#centro, #seccion_diccionario, .foto){
+main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section){
     padding:1rem;
 }
+
+/* centro */
+
 h1{
     font-size: 4vw;
     text-align:center;
@@ -309,6 +369,7 @@ a{padding:0;} mfrac{padding-left: 0.7rem;}
     width:10%;
 } */
 
+
 footer{
     background-color:rgb(255, 230, 86);
     padding: 2rem 1rem;
@@ -352,15 +413,106 @@ footer section nav ul{
     text-align:center;
 }
 
-@media screen and (min-width: 1143px){
+@media only screen and (min-width: 1143px){
 #footer_content{
     justify-content: space-around;
 }
 
-    #footer_notes{
+#footer_notes{
     border-top: none;
     padding-top: 0;
     border-left: solid #ecd44a 2px;
     padding-left: 2rem;
 }
 }
+
+/* @media only screen and (max-width: 800px){
+#three_section{
+    flex-wrap: wrap;
+} */
+/* #section_homage img{
+    flex-wrap: nowrap;
+    width:100%
+} */
+
+
+
+
+
+
+
+@media screen and (max-width:640px){
+main{
+    background-color: #aa0;
+}
+#small-container{
+    flex-grow:2;
+    max-width:100%;
+}
+#link_relatives{
+    max-width:900px;
+}
+#section_homage{
+    flex-grow:2;
+    max-width:100%;
+}
+}
+
+@media screen and (min-width:640px) and (max-width:1100px){
+main{
+    background-color: red;
+}
+#small-container{
+    max-width:70%;
+    flex-grow:2;
+}
+#link_relatives{
+    max-width:900px;
+}
+#section_homage{
+    max-width:30%;
+    flex-grow:2;
+}
+
+}
+
+@media screen and (min-width:1100px){
+main{
+    background-color: #0a0
+}
+#center{
+    flex-grow:2;
+    max-width:90%;
+}
+
+#link_relatives{
+    max-width:10%;
+}
+
+#small-container{
+    flex-grow:2;
+    max-width:80%;
+}
+
+#section_homage{
+    flex-grow:2;
+    max-width:20%;
+}
+}
+
+
+/* @media screen and (min-width:1310px){
+main{
+    background-color: #000;
+}
+#small-container{
+    width:60%;
+}
+#section_homage{
+    width:30%;
+}
+/* #section_homage img{
+    width:40%;
+}
+
+} */
