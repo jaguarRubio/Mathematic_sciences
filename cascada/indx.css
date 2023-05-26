@@ -179,7 +179,7 @@ header #log_in{
 }
 
 
-main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section){
+main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section, #base section){
     padding:1rem;
 }
 
@@ -224,77 +224,76 @@ article section{
 }
 #base{
     border: dashed 3px black;
+
     /* display:flex;
     flex-wrap: wrap; */
     /* background-color:brown; */ /* invert when it's asked */
 }
-#contenido1,
-#contenido2,
-#contenido3{
-    position:static;
-
-    /* background-color:slategray; */ /* invert when it's asked */
+#base .oculto{
+    /* display:flex; JS lo activa en flex */
+    justify-content: space-between;
+    flex-wrap:nowrap;
+    /* background-color:slategray;  invert when it's asked */
+    column-gap: 0.4rem;
     padding:0;
-    margin:0;
 }
-
-/* botones */
 .boton{
+    display:flex;
+    flex-direction:column;
     position:relative;
-    /* background-color:forestgreen; */ /* invert when it's asked */
+    /* padding: 0 8rem; */
+    /* width:500px; */
 }
 .boton button{
-    display:block;
-
-    margin: 0.5rem 0rem;
-    padding: 0.7rem;
-    width:8rem;
-    background-color: limegreen;
-}
-.boton button:hover{
-    background-color: purple;
+    /* position:relative; */
+    width:fit-content;
 }
 
-.small-botton button{
-    display:block;
-    font-size: small;
-    margin: 0.5rem 0rem 0;
-    padding: 0.5rem;
-    width:6rem;
-    background-color: limegreen;
+.small-botton{
+    display:flex;
+    flex-direction: column;
+    margin:1% 0 2% 3%;
+    row-gap: 1rem;
+    /* width:15%; */
 }
-.small-botton button:hover{
-    background-color: purple;
+.icono-foto-descripcion{
+    position:absolute;
+    top:0;
+    left:20%;
+    justify-content:space-between;
+    /* background-color:#ff000041; */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
 }
-
-#base .boton .oculto{
-    padding:0rem 0 0.4rem 2.3rem;
-}
-
-.descripcion{
+.icono-foto-descripcion .descripcion{
+    background-color: #e0df9a;
     border: 3px black solid;
     border-radius: 3rem;
     padding:1rem;
-    width:40%;
+    width:50%;
     max-height:20rem;
-    left:20%;
-    top:0;
-    position:absolute;
+    /* top:0;
+    left: 30%;
+    margin-left: -10%;
+    position:absolute; */
     overflow:auto;
 }
-.descripcion h4{
-    text-align: center;
+.icono-foto-descripcion .icono_lista{
+    display:flex;
+    flex-direction: column;
+    width:40%;
+    /* background-color: saddlebrown !important; */
 }
-.icono_lista{
-    position:absolute;
-    right:0;
-    top:0;
+.icono-foto-descripcion .icono_lista img{
+    width:100%;
+    border:1px solid black;
 }
-.icono_lista ol{
-    border: 1px black solid;
-    height:4rem;
-    overflow:auto;
+.icono-foto-descripcion .icono_lista ol{
+    width:70%;
 }
+
+
 /* #seccion_diccionario{
     padding:0;
 } */
