@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- cascada general -->
+    <link rel="stylesheet" href="./cascada/cascadaGeneral.css">
+    <link rel="stylesheet" href="./cascada/contacto.css">
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/94cefdf824.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <section id="bar_nav">
+                <img src="./imagenes/t5rreCyan.png" alt="torre">
+                <h2>Manzana Magnus</h2>
+                <nav>
+                    <a href="#inicio">Start</a>
+                    <a href="#contenidos">Content</a>
+                    <a href="#diccionario">Dictionary</a>
+                    <a href="#tables">Tables</a>
+                </nav>
+            </section>
+            <section id="user">
+                <article id="log_in_sign_in"><a href="#"><p id="log_in">Mmm</p></a> <a href="#"><p id="sign_in">mmm</p></a></article>
+                <a href="#" id="user-ico"><i class="fa-solid fa-user"></i></a>
+            </section>
+        </header>
+
+        <main>
+        <section id="link_relatives">
+            <nav>
+                <a href="./index.html">Main</a>
+                <a href="./cuenta.html">User</a>
+                <a href="./contact.html">Contact</a>
+                <a href="./aboutUs.html">About us</a>
+            </nav>
+        </section>
+        <section>
+            <h2>Contact</h2>
+        </section>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Email</legend>
+                    
+                    <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                            <p id="error0"></p>
+
+                    <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="@">
+                            <p id="error1"></p>
+
+                    <label for="message">Text</label>
+                        <textarea name="message" id="message" cols="45" rows="15"></textarea>
+                            <p id="error2"></p>
+
+                        
+                    <button type="submit" id="validationForm" onclick="validator()">Send</button>
+                        <p id="sent"></p>
+                </fieldset>
+            </form>
+        </section>
+        <article>
+            <h3>Optional</h3>
+            <label for="personal_mail">Direct</label>
+            <a href="mailto:mayaMistico092@outlook.com">Email</a>
+            <p>Mirrow alternative if it's not possible</p>
+        </article>
+    </main>
+
+<script src="./javascript/contacto.js"></script>
+</body>
+</html>
