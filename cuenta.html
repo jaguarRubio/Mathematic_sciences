@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <!-- cascada general -->
+    <link rel="stylesheet" href="./cascada/cascadaGeneral.css">
+    <link rel="stylesheet" href="./cascada/cuenta.css">
+    <!-- font -->
+    <script src="https://kit.fontawesome.com/94cefdf824.js" crossorigin="anonymous"></script>
+    <!-- font script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=DotGothic16&family=IM+Fell+English+SC&family=Tilt+Prism&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section id="bar_nav">
+            <img src="./imagenes/t5rreCyan.png" alt="torre">
+            <h2>Manzana Magnus</h2>
+            <nav>
+                <a href="#inicio">Start</a>
+                <a href="#contenidos">Content</a>
+                <a href="#diccionario">Dictionary</a>
+                <a href="#tables">Tables</a>
+            </nav>
+        </section>
+        <section id="user">
+            <article id="log_in_sign_in"><a href="#"><p id="log_in">Sign up</p></a> <a href="#"><p id="sign_in">Log in</p></a></article>
+            <a href="#" id="user-ico"><i class="fa-solid fa-user"></i></a>
+        </section>
+    </header>
+
+    <main>
+    <section id="link_relatives">
+        <nav>
+            <a href="./index.html">Main</a>
+            <a href="./cuenta.html">User</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./aboutUs.html">About us</a>
+        </nav>
+    </section>
+
+    <section>
+        <h2>Account</h2>
+    </section>
+
+    <section id="form-account">
+        <form action="get">
+            <article class="pf">
+
+            </article>
+
+            <fieldset>
+                <legend>My account</legend>
+                <label for="pf">Profile picture</label>
+                <input type="file" name="pf" id="pf" accept=".png, jpg, .svg, .ico">
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" maxlength="26" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="rpassword">Rewrite password</label>
+                <input type="password" name="password" id="password">
+                <label for="color">Account color</label>                
+                <input type="color" id="color" name="color">
+
+                <label for="genre">Genre</label>
+                <input type="radio" name="genre0" id="genre0" value="m">Male
+                <input type="radio" name="genre0" id="genre1" value="f">Female
+                <input type="radio" name="genre0" id="genre2" value="n">Neither male nor female
+                
+                <button type="submit">Done</button>
+            </fieldset>
+        </form>
+    </section>
+    
+</body>
+</html>
