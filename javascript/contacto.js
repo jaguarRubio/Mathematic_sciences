@@ -1,7 +1,29 @@
+//reference
+const aplicacion = document.querySelector('.container')
+
+const getURL = new URLSearchParams(window.location.search)
+id = getURL.get('id')
+console.log(id)
+
+const url = 'https://jsonplaceholder.typicode.com/users'
+fetch(`${url}/${id}`)
+.then(res => res.json())
+.then(data => {
+    const name = document.createElement('p')
+    const email = document.createElement('p')
+    const phone= document.createElement('p')
+    name.innerHTML = data.name
+    email.innerHTML = data.email
+    phone.innerHTML = data.phone
+    aplicacion.appendChild(name)
+    aplicacion.appendChild(email)
+    aplicacion.appendChild(phone)
+})
+.catch(err => console.log(err))
 
 
 
-
+//validacion
 function validator(){
 
     const camp = document.getElementsByTagName("form")[0];
@@ -11,7 +33,7 @@ function validator(){
     console.log(Name);
 
     var flag = false;
-
+    var cont = 0;
 
 
 
@@ -22,6 +44,7 @@ function validator(){
     }else{
         msgError.innerHTML = "Correct. it's inteligible name."
         flag = true
+        cont += 1;
     };
 
     const electronicMail = camp[2].value;
@@ -32,6 +55,7 @@ function validator(){
     }else{
         ErrorMail.innerHTML = "Valid. Mail has '@'."
         flag = true
+        cont += 1;
     }
 
     const LrgMessage = camp[3].value;
@@ -42,10 +66,11 @@ function validator(){
     }else{
         ErrorLrg.innerHTML= "Affirmative."
         flag = true
+        cont += 1;
     }
 
     const sending = document.getElementById("sent");
-    if(flag){
+    if(flag && cont == 3){
         sending.innerHTML = "Sent righfully" 
     }else{
         sending.innerHTML = "Couldn't send"

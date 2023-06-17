@@ -190,7 +190,7 @@ h1{
 }
 
 .P_science_introduction::first-letter{
-    font-size:3.3vw;
+    font-size:4.3vw;
     float: left;
     padding: 0 0.3rem;
     margin: 0.1em 0.2em 0;
@@ -220,13 +220,13 @@ article section{
 .oculto a{
     color:#3f2f0f
 }
-#base{
+/* #base{
     border: dashed 3px black;
 
     /* display:flex;
     flex-wrap: wrap; */
-    /* background-color:brown; */ /* invert when it's asked */
-}
+    /* background-color:brown; */ /* invert when it's asked
+} */
 #base .oculto{
     /* display:flex; JS lo activa en flex */
     justify-content: space-between;
@@ -251,6 +251,8 @@ article section{
 }
 .boton button:hover{
     background-color:purple;
+
+    animation: botton 2s infinite;
 }
 .small-botton{
     display:flex;
@@ -268,6 +270,33 @@ article section{
 .small-botton button:hover{
     background-color:#800080;
 }
+
+@keyframes botton {
+    0% {
+      background-color: blue;
+    }
+    25% {
+      background-color: green;
+    }
+    50% {
+      background-color: yellow;
+    }
+    75% {
+      background-color: red;
+    }
+    100% {
+      background-color: blue;
+    }
+
+    from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(0.95);
+        background-color: green;
+      }
+  }
+
 .icono-foto-descripcion{
     position:absolute;
     top:0;
@@ -278,18 +307,40 @@ article section{
     flex-direction:row;
     flex-wrap:nowrap;
 }
+.icono-foto-descripcion ::-webkit-scrollbar{
+    height: 30px;
+    width:0.6rem;
+    background-color: #00a;
+    border-radius: 30px;
+}
+
+.icono-foto-descripcion ::-webkit-scrollbar-thumb{
+    background-color: #00000024;
+    border:1px solid black;
+    border-radius: 30px;
+}
+.icono-foto-descripcion ::-webkit-scrollbar-track-piece{
+    background-color: #ccc;
+    color: #f00;
+    border-radius: 30px;
+}
 .icono-foto-descripcion .descripcion{
     background-color: #e0df9a;
     border: 3px black solid;
     border-radius: 3rem;
     padding:1rem;
     width:50%;
-    max-height:20rem;
     /* top:0;
     left: 30%;*/
     margin-left: 2rem;
     /*position:absolute; */
+    overflow:hidden;
+    max-height: 400px;
+}
+.icono-foto-descripcion .over-scroll{
     overflow:auto;
+    height:20.3rem;
+    padding:0;
 }
 .icono-foto-descripcion .descripcion h4{
     text-align:center;
@@ -300,9 +351,14 @@ article section{
     width:40%;
     /* background-color: saddlebrown !important; */
 }
-.icono-foto-descripcion .icono_lista img{
-    width:100%;
+.icono-foto-descripcion .icono_lista article.img-cont{
     border:1px solid black;
+    max-height:300px;
+    width: 100%
+}
+.icono-foto-descripcion .icono_lista article img{
+    width:100%;
+    height: 100%;
 }
 .icono-foto-descripcion .icono_lista input{
     margin: 0.7rem 0;
@@ -316,9 +372,9 @@ article section{
 }
 
 
-/* #seccion_diccionario{
-    padding:0;
-} */
+#seccion_diccionario{
+    margin-top:13rem;
+}
 #fondo_dic{
     background-color: #212;
     padding: 5rem 0rem;
@@ -331,6 +387,19 @@ article section{
     margin: 2.6rem;
     width:50%;
     max-width: 38rem;
+
+    outline: none;
+    background-color: #616;
+    color: #fff;
+}
+
+#fondo_dic input::placeholder{
+    color:#9f9;
+}
+#fondo_dic input:focus{
+    border: 2px black solid;
+    background-color:#0a0;
+    color: #ffc;
 }
 /* #fondo_dic label{
     color: #fff;
@@ -341,6 +410,9 @@ article section{
 
 } */
 
+#section_tables ul{
+    list-style-type: square;
+}
 .lista_tabla{
     cursor: pointer;
     text-decoration: underline;
@@ -477,6 +549,24 @@ main{
     flex-grow:2;
     max-width:100%;
 }
+body p,
+body, h3, h4,
+.lista_tabla{
+    font-size: 1.8rem;
+}
+#bar_nav a{font-size:1.5rem;}
+#bar_nav h2{font-size:2.5rem;}
+button{font-size:1.4rem;}
+.boton button{width:12rem;}
+.P_science_introduction::first-letter, h1{
+    font-size:5.4rem;
+}
+.small-botton button{
+    width:7.5rem;
+}
+.icono-foto-descripcion .over-scroll{
+    height:37rem;
+}
 }
 
 @media screen and (min-width:640px) and (max-width:1100px){
@@ -494,7 +584,20 @@ main{
     max-width:30%;
     flex-grow:2;
 }
-
+body p,
+body, h2, h3, h4,
+.lista_tabla{
+    font-size: 1.7rem;
+}
+#bar_nav a{font-size:1.4rem;}
+#bar_nav h2{font-size:1.9rem;}
+button{font-size:1rem;}
+.P_science_introduction::first-letter, h1{
+    font-size:4rem;
+}
+.icono-foto-descripcion .over-scroll{
+    height:29rem;
+}
 }
 
 @media screen and (min-width:1100px){
@@ -518,6 +621,13 @@ main{
 #section_homage{
     flex-grow:2;
     max-width:20%;
+}
+body p,
+body h2, h3, h4{
+    font-size: 1rem;
+}
+.P_science_introduction::first-letter{
+    font-size:3rem;
 }
 }
 

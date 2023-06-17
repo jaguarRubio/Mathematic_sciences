@@ -1,9 +1,31 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 1.3vw;
+    font-size:1.3vw;
 }
+body h1, body h2{
+    font-family: 'IM Fell English SC', serif;
+}
+body p,
+h3,h4{
+    font-family: 'Carrois Gothic SC', sans-serif;
+}
+input,
+li
+{
+    font-family: 'DotGothic16', sans-serif;
+}
+button,
+a,td,
+figcaption p,
+form *{
+    font-family: 'IM Fell English SC', serif;
+}
+
+/* font-family: 'Carrois Gothic SC', sans-serif;
+font-family: 'DotGothic16', sans-serif;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Tilt Prism', cursive; */
 
 body{
     background-color: #ecd44a;
@@ -12,7 +34,7 @@ body{
     scroll-behavior: smooth;
     transition: all 3s 2s 3s;
 }
-
+/* 
 p{
-    font-family: 'DotGothic16', sans-serif;
-}
+    font-family: 'DotGothic16','Times New Roman', Times, sans-serif;
+} */
