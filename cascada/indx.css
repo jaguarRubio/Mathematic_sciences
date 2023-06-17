@@ -549,23 +549,38 @@ main{
     flex-grow:2;
     max-width:100%;
 }
+#user #log_in_sign_in{padding: 1.2rem 0.3rem}
 body p,
 body, h3, h4,
-.lista_tabla{
-    font-size: 1.8rem;
+#section_tables ul li,
+#section_tables .lista_tabla,
+.icono-foto-descripcion .icono_lista input{
+    font-size: 2rem;
 }
-#bar_nav a{font-size:1.5rem;}
-#bar_nav h2{font-size:2.5rem;}
-button{font-size:1.4rem;}
-.boton button{width:12rem;}
+#seccion_diccionario input{
+    font-size:2rem;
+}
+
+a:not(li a), i{font-size:2.3rem;}
+.icono_lista ol li,
+.icono_lista ol li a{font-size:2.1rem}
+#bar_nav h2{font-size:2.8rem;}
+/* #bar_nav nav{width:100%;} */
+header #bar_nav nav a{font-size:2.5rem;}
+button{font-size:2.3rem;}
+.boton button{width:16rem;}
+.small-botton button{font-size:2.0rem; width:10rem}
 .P_science_introduction::first-letter, h1{
-    font-size:5.4rem;
+    font-size:6.3rem;
 }
-.small-botton button{
-    width:7.5rem;
+.icono-foto-descripcion .icono_lista ol{
+    max-height: 10rem;
 }
 .icono-foto-descripcion .over-scroll{
-    height:37rem;
+    height:45rem;
+}
+table *{
+    font-size:2.2rem;
 }
 }
 
