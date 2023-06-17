@@ -363,6 +363,7 @@ article section{
 .icono-foto-descripcion .icono_lista input{
     margin: 0.7rem 0;
     font-size:smaller;
+    background-color:#ccc;
 }
 .icono-foto-descripcion .icono_lista ol{
     background-color:#e0df9a;
