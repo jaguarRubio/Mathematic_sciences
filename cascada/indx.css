@@ -177,7 +177,7 @@ header #log_in{
 }
 
 
-main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section, #base section, #section_tables){
+main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section, #base section, #section_tables, #container){
     padding:1rem;
 }
 
