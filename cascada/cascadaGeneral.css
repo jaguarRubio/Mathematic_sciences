@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     font-size:1.3vw;
+    max-width:100%;
 }
 body h1, body h2{
     font-family: 'IM Fell English SC', serif;
@@ -29,6 +30,7 @@ font-family: 'Tilt Prism', cursive; */
 
 body{
     background-color: #ecd44a;
+    overflow-x: hidden;
 }
 :root{
     scroll-behavior: smooth;
