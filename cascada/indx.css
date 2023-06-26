@@ -83,7 +83,7 @@ header #log_in{
     column-gap:0.5rem;
 }
 #link_relatives{
-    padding:0 0.2rem;
+    /* padding:0 0.2rem; */
     background-color: #dbc339;
     width: 80px;
     max-width:120px;
@@ -139,6 +139,7 @@ header #log_in{
 }
 
 #link_relatives nav{
+    padding: 0 0.2rem;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -177,7 +178,7 @@ header #log_in{
 }
 
 
-main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section, #base section, #section_tables, #container){
+main section:not(#center, #seccion_diccionario, .foto, #section_homage, #link_relatives, #small-container, #three_section, #base section, #section_tables, .container, #titulo){
     padding:1rem;
 }
 
@@ -275,28 +276,21 @@ article section{
 
 @keyframes botton {
     0% {
-      background-color: blue;
-    }
-    25% {
       background-color: green;
     }
+    25% {
+      background-color: lime;
+    }
     50% {
-      background-color: yellow;
+      background-color: limegreen;
     }
     75% {
-      background-color: red;
+      background-color: forestgreen;
     }
     100% {
-      background-color: blue;
+      background-color: darkgreen;
     }
 
-    from {
-        transform: scale(1);
-      }
-      to {
-        transform: scale(0.95);
-        background-color: green;
-      }
   }
 
 .icono-foto-descripcion{
@@ -553,21 +547,41 @@ main{
     max-width:100%;
 }
 
-#user #log_in_sign_in{padding: 1.2rem 0.3rem}
+header #bar_nav img{
+    width:24px;
+    height:22px;
+}
+
+#user #log_in_sign_in{padding: 1.2rem 0.3rem; vertical-align:super;}
+#log_in_sign_in p{vertical-align:middle;}
+
+#user-ico, i.fa-solid.fa-user{
+    vertical-align:top;
+}
+
 body p,
 body, h3, h4,
-#section_tables ul li,
-#section_tables .lista_tabla,
-.icono-foto-descripcion .icono_lista input{
-    font-size: 2rem;
+#section_tables ul li{
+    font-size: 13px;
 }
+
+#section_tables .lista_tabla{
+    font-size:12px;
+}
+
+.icono-foto-descripcion .icono_lista input,
+.icono-foto-descripcion p{
+    font-size:10px;
+}
+
+
 #seccion_diccionario input{
     font-size:2rem;
 }
 
 a:not(li a), i{font-size:2.3rem;}
 .icono_lista ol li,
-.icono_lista ol li a{font-size:2.1rem}
+.icono_lista ol li a{font-size:11px}
 #bar_nav h2{font-size:2.8rem;}
 /* #bar_nav nav{width:100%;} */
 header #bar_nav nav a{font-size:2.5rem;}
@@ -583,12 +597,56 @@ button{font-size:2.3rem;}
 .icono-foto-descripcion .over-scroll{
     height:45rem;
 }
-table *{
-    font-size:2.2rem;
+
+
+#section_tables figure,
+#section_tables section,
+#section_tables ul{
+    position:relative;
 }
+
+#section_tables ul li{
+    position:relative;
+    list-style: none;
+    margin-left:0;
+}
+
+#section_tables table,
+#section_tables figcaption{
+    position:relative;
+}
+
+
+
+#section_tables ul{
+    padding: 1rem;
+}
+/* 
+#section_tables ul li{
+    margin-left: 4rem;
+} */
+
+#section_tables li table{
+    margin: 2rem 1rem;
+}
+
+#section_tables table th,
+#section_tables table td,
+#section_tables table td a,
+#section_tables table td math mn{
+    font-size:12px;
+}
+
+#section_tables table #r2{
+    font-size:17px;
+}
+
 footer img{
     object-fit: cover;
     width: 100%;
+}
+footer #copyright_reference p{
+    font-size:10px;
 }
 }
 

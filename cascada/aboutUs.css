@@ -137,6 +137,7 @@ p, h3{
 #books-img{
     width:100%;
     border: 2px #cab228 solid;
+    z-index: 2;
     padding:0;
     margin: 3rem 0;
     background-image: url(/imagenes/estanteria_de_libros.jpeg);
