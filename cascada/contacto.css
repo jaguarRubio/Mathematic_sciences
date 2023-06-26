@@ -97,7 +97,7 @@ header #log_in{
     background-image: url(../imagenes/Mountains.jpg);
     background-size: cover;
 }
-#link_relatives a[href="./contact.html"]{
+#link_relatives a[href="./contacto.html"]{
     background-image: url(../imagenes/Forest.jpg);
     background-size: cover;
 }

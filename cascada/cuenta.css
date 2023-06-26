@@ -97,7 +97,7 @@ header #log_in{
     background-image: url(../imagenes/Mountains.jpg);
     background-size: cover;
 }
-#link_relatives a[href="./contact.html"]{
+#link_relatives a[href="./contacto.html"]{
     background-image: url(../imagenes/Forest.jpg);
     background-size: cover;
 }
@@ -124,10 +124,46 @@ header #log_in{
 
 
 .pf{
+    display:flex;
+    cursor:pointer;
     background-color: #ccc;
     margin:1rem;
+    border: 1px solid #000;
     width:300px;
     height:500px;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.pf:hover{
+    background-color:#aaa;
+}
+
+.pf:hover span{
+    color: #ccc;
+    font-weight:550;
+}
+
+.pf span{
+    font-size:20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: inherit;
+    text-align: center;
+    position: relative;
+    z-index:2;
+    color:#999;
+}
+
+.pf i{
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    font-size:99px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 [type="password"],
@@ -137,4 +173,52 @@ header #log_in{
 
 button{
     width:125;
+}
+
+@media screen and (max-width:640px){
+    #link_relatives{
+        max-width:900px;
+    }
+
+    header #bar_nav img{
+        width:24px;
+        height:22px;
+    }
+
+    #user #log_in_sign_in{padding: 1.2rem 0.3rem; vertical-align:super;}
+    #log_in_sign_in p{vertical-align:middle;}
+
+    #user-ico, i.fa-solid.fa-user{
+        vertical-align:top;
+    }
+
+    body p, body h2, legend{font-size:13px}
+
+    #form-account form{
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-content:center;
+    }
+
+    #form-account .pf{
+        align-self:center;
+    }
+    
+    #form-account fieldset{
+        align-self:center;
+        width:70%;
+    }
+
+    form fieldset label, form fieldset input,
+    form fieldset input *{
+        font-size:13px;
+    }
+
+    form fieldset input[type="radio"] *{
+        font-size:2rem;
+    }
+
+    button{font-size:2.3rem;}
+
+    a:not(li a), i{font-size:2.3rem;}
 }

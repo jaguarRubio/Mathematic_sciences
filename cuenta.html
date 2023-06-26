@@ -49,21 +49,23 @@
 
     <section id="form-account">
         <form action="get">
-            <article class="pf">
-
-            </article>
+                <article class="pf" onclick="document.getElementById('pf').click();">
+                    <span>Image</span>
+                    <i class="fa-solid fa-user"></i>
+                </article>
 
             <fieldset>
                 <legend>My account</legend>
                 <label for="pf">Profile picture</label>
-                <input type="file" name="pf" id="pf" accept=".png, jpg, .svg, .ico">
+                <!--I couldn't-->
+                <input type="file" name="pf" id="pf" accept=".png, jpg, .svg, .ico" onchange="document.getElementsByClassName('pf')[0].style.backgroundImage = 'url(' + window.webkitURL.createObjectURL(this.files[0]) + ')'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundSize = 'cover'"; onchange = "document.getElementsByClassName('pf')[0].style.backgroundRepeat = 'no-repeat'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundColor='none'"> 
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" maxlength="26" required>
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password">
                 <label for="rpassword">Rewrite password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="rpassword" id="rpassword">
                 <label for="color">Account color</label>                
                 <input type="color" id="color" name="color">
 
@@ -78,4 +80,5 @@
     </section>
     
 </body>
+<script src="./javascript/cuenta.js"></script>
 </html>
