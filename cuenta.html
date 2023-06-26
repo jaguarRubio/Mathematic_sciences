@@ -58,7 +58,7 @@
                 <legend>My account</legend>
                 <label for="pf">Profile picture</label>
                 <!--I couldn't-->
-                <input type="file" name="pf" id="pf" accept=".png, jpg, .svg, .ico" onchange="document.getElementsByClassName('pf')[0].style.backgroundImage = 'url(' + window.webkitURL.createObjectURL(this.files[0]) + ')'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundSize = 'cover'"; onchange = "document.getElementsByClassName('pf')[0].style.backgroundRepeat = 'no-repeat'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundColor='none'"> 
+                <input type="file" name="pf" id="pf" accept=".png, .jpg, .svg, .ico" onchange="document.getElementsByClassName('pf')[0].style.backgroundImage = 'url(' + window.webkitURL.createObjectURL(this.files[0]) + ')'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundSize = 'cover'"; onchange = "document.getElementsByClassName('pf')[0].style.backgroundRepeat = 'no-repeat'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundColor='none'"> 
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" maxlength="26" required>
