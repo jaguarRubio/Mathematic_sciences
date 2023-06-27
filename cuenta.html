@@ -56,9 +56,13 @@
 
             <fieldset>
                 <legend>My account</legend>
-                <label for="pf">Profile picture</label>
-                <!--I couldn't-->
+
+                <article>
+                <label for="pf" class="boton-custom">
+                <i class="fa fa-cloud-upload"></i> Upload custom file</label>
+                <!--I couldn't to set these at all-->
                 <input type="file" name="pf" id="pf" accept=".png, .jpg, .svg, .ico" onchange="document.getElementsByClassName('pf')[0].style.backgroundImage = 'url(' + window.webkitURL.createObjectURL(this.files[0]) + ')'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundSize = 'cover'"; onchange = "document.getElementsByClassName('pf')[0].style.backgroundRepeat = 'no-repeat'"; onchange="document.getElementsByClassName('pf')[0].style.backgroundColor='none'"> 
+                </article>
 
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" maxlength="26" required>
@@ -69,10 +73,13 @@
                 <label for="color">Account color</label>                
                 <input type="color" id="color" name="color">
 
-                <label for="genre">Genre</label>
-                <input type="radio" name="genre0" id="genre0" value="m">Male
-                <input type="radio" name="genre0" id="genre1" value="f">Female
-                <input type="radio" name="genre0" id="genre2" value="n">Neither male nor female
+                <label for="genre0">Genre</label>
+                <article><input type="radio" name="genre0" id="genre0" value="m">
+                <span>Male</span></article>
+                <article><input type="radio" name="genre0" id="genre1" value="f">
+                <span>Female</span></article>
+                <article><input type="radio" name="genre0" id="genre2" value="n">
+                <span>Neither male nor female</span></article>
                 
                 <button type="submit">Done</button>
             </fieldset>

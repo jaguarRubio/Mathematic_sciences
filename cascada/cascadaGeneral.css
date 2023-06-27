@@ -40,3 +40,33 @@ body{
 p{
     font-family: 'DotGothic16','Times New Roman', Times, sans-serif;
 } */
+
+button{
+    background-color:#32cd32;
+    /* position:relative; */
+    /* width:8rem;
+    padding:0.7rem; */
+}
+button:hover{
+    background-color:purple;
+    animation: botton 6s infinite;
+}
+
+@keyframes botton {
+    0% {
+      background-color: green;
+    }
+    25% {
+      background-color: lime;
+    }
+    50% {
+      background-color: limegreen;
+    }
+    75% {
+      background-color: forestgreen;
+    }
+    100% {
+      background-color: darkgreen;
+    }
+
+  }

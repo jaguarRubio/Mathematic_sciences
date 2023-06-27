@@ -113,14 +113,7 @@ header #log_in{
     column-gap: 1rem;
 }
 
-#form-account fieldset{
-    display:flex;
-    flex-direction:column;
-    width:40%;
-    align-self:flex-end;
-    align-content:flex-end;
-    background-color: #dbc339;
-}
+
 
 
 .pf{
@@ -166,13 +159,35 @@ header #log_in{
     z-index: 1;
 }
 
+#form-account fieldset{
+    display:flex;
+    flex-direction:column;
+    width:40%;
+    align-self:flex-end;
+    align-content:flex-end;
+    background-color: #dbc339;
+}
+
 [type="password"],
 [type="text"]{
     background-color:green;
 }
 
-button{
-    width:125;
+#form-account fieldset input[type="file"]{
+        display:none;
+}
+
+#form-account fieldset .boton-custom{
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #32cd32;
+    
+}
+
+#form-account fieldset .boton-custom:hover{
+    background-color: #800080;
 }
 
 @media screen and (max-width:640px){
@@ -206,7 +221,7 @@ button{
     
     #form-account fieldset{
         align-self:center;
-        width:70%;
+        width:80%;
     }
 
     form fieldset label, form fieldset input,
@@ -214,8 +229,8 @@ button{
         font-size:13px;
     }
 
-    form fieldset input[type="radio"] *{
-        font-size:2rem;
+    form fieldset span{
+        font-size:2.4rem;
     }
 
     button{font-size:2.3rem;}

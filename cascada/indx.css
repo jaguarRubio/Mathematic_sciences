@@ -274,7 +274,7 @@ article section{
     background-color:#800080;
 }
 
-@keyframes botton {
+/* @keyframes botton {
     0% {
       background-color: green;
     }
@@ -291,7 +291,7 @@ article section{
       background-color: darkgreen;
     }
 
-  }
+  } */
 
 .icono-foto-descripcion{
     position:absolute;
