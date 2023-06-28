@@ -111,6 +111,39 @@ header #log_in{
 form{
     display:flex;
     flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:stretch;
+}
+
+form fieldset{
+    display:flex;
+    flex-wrap:wrap;
+    width:40%;
+    flex-direction:column;
+    align-content:center;
+    align-items:flex-start;
+    gap: 15px 20px;
+    background-color: #dbc339;
+}
+
+form fieldset article{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    margin:0;
+    padding:0;
+    background-color:#00a00f;
+}
+
+form fieldset article label{
+    flex-basis: 10%;
+}
+form fieldset article label[for="message"]{flex-basis:6%;}
+form fieldset article input{
+    flex-basis: 40%;
+}
+form fieldset article p{
+    flex-basis: 70%;
 }
 
 button[type="submit"]{
@@ -120,6 +153,57 @@ button[type="submit"]{
     width:6rem;
 }
 
-article{
-    margin:9rem 0 3rem;;
+body section.container{
+    margin-bottom:300px;
+}
+
+@media screen and (max-width: 640px){
+
+    #link_relatives{
+        max-width:900px;
+    }
+
+    header #bar_nav img{
+        width:24px;
+        height:22px;
+    }
+
+    #user #log_in_sign_in{padding: 1.2rem 0.3rem; vertical-align:super;}
+    #log_in_sign_in p{vertical-align:middle;}
+
+    #user-ico, i.fa-solid.fa-user{
+        vertical-align:top;
+    }
+
+    body p, body h2, body h3, legend, label{font-size:13px}
+
+
+
+
+    form{
+        justify-content:center;
+
+    }
+
+    form fieldset{
+        width:80%;
+        gap: 10px 15px;
+    }
+
+    section.container{
+        margin-bottom:125px;
+    }
+    
+    form fieldset label, form fieldset input,
+    form fieldset input *{
+        font-size:13px;
+    }
+
+    form fieldset span{
+        font-size:2.4rem;
+    }
+
+    body fieldset article button[type="submit"]{font-size:2.3rem; width:44px}
+
+    a:not(li a), i{font-size:2.3rem;}
 }
