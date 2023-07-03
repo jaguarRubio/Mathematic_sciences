@@ -9,6 +9,19 @@ function mostrar(id)
     idImagenVisible=id;
 }
 
+var buttonSelected = document.querySelectorAll('button');
+buttonSelected.forEach(function(butt){
+    butt.addEventListener("click", function(){
+        butt.classList.add('button-selected');
+
+        buttonSelected.forEach(function(otherbutt){
+            if (otherbutt!==butt){
+                otherbutt.classList.remove('button-selected');
+            };
+        });
+    });
+});
+
 // Tablas
 idTablaVisible="table-7op-arithmetic";
 function mostrarT(id)
