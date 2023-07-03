@@ -37,13 +37,6 @@ header{
     font-size:2.1vw;
     /* background-color: #1af; */
 }
-#bar_nav nav{
-    /* background-color: #f3f; */
-    flex-grow: 1;
-}
-#bar_nav nav a:first-child{
-    padding-left:0.3rem;
-}
 
 header #user p{
     display:inline;
