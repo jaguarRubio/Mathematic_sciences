@@ -1,4 +1,4 @@
-/* body{
+/* /* body{
     background-image: url(../imagenes/estanteria_de_libros.jpeg);
     background-attachment: fixed;
 } */
@@ -37,13 +37,6 @@ header{
     font-size:2.1vw;
     /* background-color: #1af; */
 }
-#bar_nav nav{
-    /* background-color: #f3f; */
-    flex-grow: 1;
-}
-#bar_nav nav a:first-child{
-    padding-left:0.3rem;
-}
 
 header #user p{
     display:inline;
@@ -72,18 +65,43 @@ header #log_in{
     background-color: #555;
     padding: 0.4rem 0.2rem;
 }
+/****************************************************************************/
+/* #link_relatives{
+    display:flex;
+} */
 
 #link_relatives nav{
+    margin: 0 auto;
+}
+
+#link_relatives nav ul{
+    margin: 0 auto;
     display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    row-gap:12px;
+    flex-wrap:wrap;
+    width:1100px;
+    justify-content:space-around;
+}
+
+#link_relatives nav ul li{
+    width:250px;
+}
+
+#link_relatives nav ul li#desert{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_desert.png);
+}
+#link_relatives nav ul li#mountain{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_mountain.png);
+}
+#link_relatives nav ul li#forest{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_forest.png);
+}
+#link_relatives nav ul li#night{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_night.png);
 }
 
 #link_relatives a{
-    border: 1px black solid;
-    padding: 10%;
-    margin: 0 0.2rem;
-    border-radius: 50%;
+    font-size:1.2rem;
     color: white;
     font-weight: 500;
 }
@@ -93,24 +111,7 @@ header #log_in{
     font-weight: 900;
     text-decoration:underline;
 }
-
-#link_relatives a[href="./index.html"]{
-    background-image: url(../imagenes/Desert.jpg);
-    background-size: cover;
-}
-#link_relatives a[href="./cuenta.html"]{
-    background-image: url(../imagenes/Mountains.jpg);
-    background-size: cover;
-}
-#link_relatives a[href="./contacto.html"]{
-    background-image: url(../imagenes/Forest.jpg);
-    background-size: cover;
-}
-#link_relatives a[href="./aboutUs.html"]{
-    background-image: url(../imagenes/Night.jpg);
-    background-size: cover;
-}
-
+/****************************************************************************/
 #flex-container{
     /* background-color:#999; */
     display:flex;
@@ -121,26 +122,35 @@ header #log_in{
 #beneath_section{
     background-color: #dbc339;
     padding: 1rem;
+    margin: 0 auto;
     border: 0.3rem #cab228 solid;
-    width:50%;
 }
 
+article{
+    width:95%;
+    max-width: 1100px;
+}
 
 p, h3{
     font-size:1rem;
 }
 
-#top_section{
-    margin-top:5rem;
+#article-top{
+    background:linear-gradient(to bottom,#dbc339,#fae156,#cab228);
+    padding:5rem 1rem 2rem;
+    margin-top:3rem;
+    border-left: solid #cab228 1px;
+    border-right: solid #cab228 1px;
+    border-top: solid #cab228 1px;
 }
 
 #books-img{
     width:100%;
+    max-width:100%;
     border: 2px #cab228 solid;
-    z-index: 2;
+    z-index: 1;
     padding:0;
-    margin: 3rem 0;
-    background-image: url(/imagenes/estanteria_de_libros.jpeg);
+    background-image: url(../imagenes/estanteria_de_libros.jpeg);
     height:14rem;
     border-top:6px #cab228 solid;
     border-bottom: 6px #cab228 solid;
@@ -148,6 +158,89 @@ p, h3{
     background-attachment:fixed;
     background-repeat: repeat;
 }
-#beneath_section{
-    margin-bottom:5rem;
+
+#article-beneath{
+    background:linear-gradient(to top, #dbc339,#fae156,#cab228);
+    padding:2rem 1rem 5rem;
+    margin-bottom:3rem;
+    border-left: solid #cab228 1px;
+    border-right: solid #cab228 1px;
+    border-bottom: solid #cab228 1px;
+}
+
+@media screen and (max-width:640px){
+
+    #link_relatives nav ul{
+        flex-direction:column;
+        row-gap: 8px;
+    }
+    #link_relatives nav ul a{font-size:2.1rem;}
+    
+    header #bar_nav img{
+        width:24px;
+        height:22px;
+    }
+
+    #bar_nav h2{font-size:2.8rem;}
+
+    #user i{padding:0.5rem;}
+
+    #user #log_in_sign_in{padding: 1.2rem 0.3rem; vertical-align:super;}
+    #log_in_sign_in p{vertical-align:middle;}
+    
+    #user-ico, i.fa-solid.fa-user{
+        vertical-align:top;
+    }
+    
+    article{
+        width:100%;
+    }
+
+    body p,
+    body, h3, h4,
+    #section_tables ul li{
+        font-size: 13px;
+    }
+
+    body h1, body h2{font-size: 2.6rem}
+
+    #books-img{height: 20rem;}
+    
+    a:not(li a), i{font-size:2.3rem;}
+}
+
+@media screen and (min-width:640px) and (max-width:1100px){
+
+    #bar_nav a{font-size:1.4rem;}
+
+    #bar_nav h2{font-size:1.9rem;}
+
+    header #bar_nav img{
+        width:33px;
+        height:29px;
+    }
+
+    #bar_nav h2{font-size:2rem;}
+
+    #user #log_in_sign_in{padding: 0.8rem 0.3rem; vertical-align:middle;}
+
+    #log_in_sign_in a{font-size:1.5rem;}
+
+    #log_in_sign_in p{vertical-align:middle;font-size:1.5rem;}
+
+
+        
+    #user-ico, i.fa-solid.fa-user{
+        vertical-align:middle;
+        font-size:1.7rem;
+    }
+
+    #link_relatives nav ul a{
+        font-size:1.6rem;
+    }
+
+    body p,
+    body, h2, h1{
+        font-size: 1.7rem;
+    }
 }
