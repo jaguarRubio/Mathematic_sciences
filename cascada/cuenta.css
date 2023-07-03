@@ -32,13 +32,6 @@ header{
     font-size:2.1vw;
     /* background-color: #1af; */
 }
-#bar_nav nav{
-    /* background-color: #f3f; */
-    flex-grow: 1;
-}
-#bar_nav nav a:first-child{
-    padding-left:0.3rem;
-}
 
 header #user p{
     display:inline;
@@ -68,17 +61,40 @@ header #log_in{
     padding: 0.4rem 0.2rem;
 }
 
+/****************************************************************************/
+
 #link_relatives nav{
+    margin: 0 auto;
+}
+
+#link_relatives nav ul{
+    margin: 0 auto;
     display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    row-gap:12px;
+    flex-wrap:wrap;
+    width:1100px;
+    justify-content:space-around;
+}
+
+#link_relatives nav ul li{
+    width:250px;
+}
+
+#link_relatives nav ul li#desert{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_desert.png);
+}
+#link_relatives nav ul li#mountain{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_mountain.png);
+}
+#link_relatives nav ul li#forest{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_forest.png);
+}
+#link_relatives nav ul li#night{
+    list-style-image: url(../imagenes/rounded-in-photoretrica_night.png);
 }
 
 #link_relatives a{
-    border: 1px black solid;
-    padding: 10%;
-    margin: 0 0.2rem;
-    border-radius: 50%;
+    font-size:1.2rem;
     color: white;
     font-weight: 500;
 }
@@ -88,22 +104,10 @@ header #log_in{
     font-weight: 900;
     text-decoration:underline;
 }
-
-#link_relatives a[href="./index.html"]{
-    background-image: url(../imagenes/Desert.jpg);
-    background-size: cover;
-}
-#link_relatives a[href="./cuenta.html"]{
-    background-image: url(../imagenes/Mountains.jpg);
-    background-size: cover;
-}
-#link_relatives a[href="./contacto.html"]{
-    background-image: url(../imagenes/Forest.jpg);
-    background-size: cover;
-}
-#link_relatives a[href="./aboutUs.html"]{
-    background-image: url(../imagenes/Night.jpg);
-    background-size: cover;
+/****************************************************************************/
+body section h2{
+    margin-left:0.6rem;
+    font-size:1.2rem;
 }
 
 #form-account form{
@@ -112,9 +116,6 @@ header #log_in{
     justify-content:flex-end;
     column-gap: 1rem;
 }
-
-
-
 
 .pf{
     display:flex;
@@ -190,24 +191,86 @@ header #log_in{
     background-color: #800080;
 }
 
+footer{
+    background-color:rgb(255, 230, 86);
+    padding: 2rem 1rem;
+}
+
+footer #social_media img, 
+footer #social_media nav{
+    padding: 0 auto;
+}
+
+#footer_content{
+    min-height: 10rem;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer #social_media img{
+    width:20%
+}
+footer section nav ul{
+    display: inline;
+    padding:0;
+}
+
+#social_media{
+    max-width:600px;
+    text-align: center;
+    /* background-color:brown */
+}
+#footer_notes{
+    max-width:600px;
+    /* background-color:indigo */
+    border-top: solid #ecd44a 2px;
+    padding-top: 2rem;
+}
+#copyright_reference{
+    padding-top: 2rem;
+    margin-top:1rem;
+    border-top: 2px solid #ecd44a;
+    text-align:center;
+}
+
+@media only screen and (min-width: 1143px){
+#footer_content{
+    justify-content: space-around;
+}
+
+#footer_notes{
+    border-top: none;
+    padding-top: 0;
+    border-left: solid #ecd44a 2px;
+    padding-left: 2rem;
+}
+}
+
 @media screen and (max-width:640px){
-    #link_relatives{
-        max-width:900px;
+    #link_relatives nav ul{
+        flex-direction:column;
+        row-gap:8px;
     }
+
+    #link_relatives nav ul a{font-size:2.1rem;}
 
     header #bar_nav img{
         width:24px;
         height:22px;
     }
 
+    #bar_nav h2{font-size:2.8rem;}
+
     #user #log_in_sign_in{padding: 1.2rem 0.3rem; vertical-align:super;}
-    #log_in_sign_in p{vertical-align:middle;}
+    
+    #log_in_sign_in p{vertical-align:middle; font-size:1.8rem}
 
     #user-ico, i.fa-solid.fa-user{
         vertical-align:top;
     }
 
-    body p, body h2, legend{font-size:13px}
+   body section h2, legend{font-size:2.2rem;}
 
     #form-account form{
         flex-direction: column;
@@ -226,14 +289,89 @@ header #log_in{
 
     form fieldset label, form fieldset input,
     form fieldset input *{
-        font-size:13px;
+        font-size:2rem;
     }
 
     form fieldset span{
-        font-size:2.4rem;
+        font-size:1.7rem;
     }
 
     button{font-size:2.3rem;}
 
     a:not(li a), i{font-size:2.3rem;}
+
+    footer ul a, footer i{
+        font-size:1.7rem;
+    }
+
+    footer p, footer h4{
+        font-size:1.6rem;
+    }
+    
+    footer #copyright_reference p{
+        font-size:10px;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:1100px){
+
+    #bar_nav a{font-size:1.4rem;}
+
+    #bar_nav h2{font-size:2rem;}
+
+    header #bar_nav img{
+        width:33px;
+        height:29px;
+    }
+
+    #user #log_in_sign_in{padding: 0.8rem 0.3rem; vertical-align:middle;}
+
+    #log_in_sign_in a{font-size:1.5rem;}
+
+    #log_in_sign_in p{vertical-align:middle;font-size:1.5rem;}
+
+    #user-ico i.fa-solid.fa-user{
+        vertical-align:middle;
+        font-size:1.7rem;
+    }
+
+    #link_relatives nav ul a{
+        font-size:1.6rem;
+    }
+
+    body h2{
+        font-size: 2.7rem;
+    }
+
+    body section h2, legend{font-size:2rem;}
+
+    form fieldset label, form fieldset input,
+    form fieldset input *{
+        font-size:1.7rem;
+    }
+
+    form fieldset span{
+        font-size:1.5rem;
+    }
+
+    button{font-size:1.6rem;}
+
+    footer p,
+    footer h4{
+    font-size: 1.5rem;
+    }
+
+    footer ul a, footer i{
+        font-size:1.3rem;
+    }
+    
+    footer #copyright_reference p{
+        font-size:1rem;
+    }
+}
+
+@media screen and (min-width:1100px){
+    body p, body h2, h3, h4 {
+        font-size: 1rem;
+    }
 }
